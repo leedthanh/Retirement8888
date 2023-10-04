@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Retirement Home Maps</title>
+    
+    <!-- Include Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+    <!-- This is the basic code feel free to add more styles -->
+
+</head>
+<body>   
+    <div id="header"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10">
+                <h2>Come Home To Exceptional Senior Living.</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="filter-group text-left">
+                    <label for="rating-filter">Filter by Rating:</label>
+                    <select id="rating-filter">
+                        <option value="">Show All Ratings</option>
+                        <option value="1.0">1.0</option>
+                        <option value="2.0">2.0</option>
+                        <option value="3.0">3.0</option>
+                        <option value="4.0">4.0</option>
+                        <option value="5.0">5.0</option>
+                    </select>
+                </div><br>
+            </div>
+            <div class="col-md-6">
+                <div class="filter-group text-right">
+                    <label for="state-filter">Filter by Location:</label>
+                    <select id="state-filter">
+                        <option value="">Show All States</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 text-center">
+                <!-- Center the map -->
+                <div id="map-id" style="height: 550px; width: 95%;"></div>
+            </div>
+        </div>
+       
+    <!-- Include Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <!-- Include your custom JavaScript file (if it's in the same directory as this HTML file) -->
+    <script type="text/javascript" src="static/interactive.js"></script><br>
+
+    <script type="text/javascript" src="static/navigation.js"></script>
+
+</body>
+</html>
